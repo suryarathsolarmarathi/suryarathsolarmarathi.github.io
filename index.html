@@ -7,330 +7,356 @@
   <title>Suryarath Solar | सूर्यरथ सोलार</title>
 
   <meta name="description"
-        content="सूर्यरथ सोलार - तिमिरातून तेजाकडे. सौर ऊर्जा प्रणालीची स्थापना, घरगुती, व्यावसायिक आणि औद्योगिक सोलार सोल्युशन्स.">
+    content="सूर्यरथ सोलार - तिमिरातून तेजाकडे. सौर ऊर्जा प्रणालीची स्थापना, घरगुती, व्यावसायिक आणि औद्योगिक सोलार सोल्युशन्स.">
 
   <style>
-    *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    html{
-      scroll-behavior:smooth;
+    html {
+      scroll-behavior: smooth;
     }
 
-    body{
-      font-family:Arial,"Noto Sans Devanagari",sans-serif;
-      color:#183027;
-      background:#f8fbf8;
-      line-height:1.6;
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      color: #183027;
+      background: #f8fbf8;
+      line-height: 1.6;
     }
 
-    header{
-      background:#fff;
-      position:sticky;
-      top:0;
-      z-index:1000;
-      box-shadow:0 2px 14px rgba(0,0,0,.08);
+    /* HEADER */
+    header {
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
     }
 
-    nav{
-      max-width:1150px;
-      margin:auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 20px;
+    nav {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      min-height: 78px;
     }
 
     /* COMPANY LOGO */
-    .logo{
-      display:flex;
-      align-items:center;
-      text-decoration:none;
-      height:64px;
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 64px;
+      overflow: hidden;
     }
 
-    .logo img{
-      display:block;
-      width:205px;
-      height:58px;
-      object-fit:contain;
-      object-position:left center;
+    .logo img {
+      display: block;
+      width: 205px;
+      height: 58px;
+      object-fit: contain;
+      object-position: left center;
     }
 
-    nav ul{
-      display:flex;
-      gap:24px;
-      list-style:none;
+    /* NAVIGATION */
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      align-items: center;
     }
 
-    nav a{
-      color:#183027;
-      text-decoration:none;
-      font-weight:600;
+    nav ul li a {
+      color: #183027;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
     }
 
-    nav a:hover{
-      color:#08783d;
+    nav ul li a:hover {
+      color: #08783d;
     }
 
     /* HERO */
-    .hero{
-      background:linear-gradient(135deg,#fff8d9,#e8f8e9);
-      padding:85px 20px;
-      text-align:center;
+    .hero {
+      background: linear-gradient(135deg, #fff8d9, #e8f8e9);
+      padding: 85px 20px;
+      text-align: center;
     }
 
-    .hero h1{
-      font-size:clamp(38px,7vw,72px);
-      color:#08783d;
-      margin-bottom:5px;
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      color: #08783d;
+      margin-bottom: 5px;
     }
 
-    .hero h2{
-      font-size:clamp(22px,4vw,34px);
-      color:#d28a00;
-      margin-bottom:18px;
+    .hero h2 {
+      font-size: clamp(22px, 4vw, 34px);
+      color: #d28a00;
+      margin-bottom: 18px;
     }
 
-    .hero p{
-      max-width:720px;
-      margin:0 auto 28px;
-      font-size:19px;
-      color:#40544b;
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      font-size: 19px;
+      color: #40544b;
     }
 
-    .buttons{
-      display:flex;
-      justify-content:center;
-      gap:12px;
-      flex-wrap:wrap;
+    /* BUTTONS */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    .btn{
-      display:inline-block;
-      padding:13px 22px;
-      border-radius:30px;
-      text-decoration:none;
-      font-weight:700;
-      border:2px solid #08783d;
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid #08783d;
     }
 
-    .primary{
-      background:#08783d;
-      color:#fff;
+    .primary {
+      background: #08783d;
+      color: #ffffff;
     }
 
-    .secondary{
-      background:#fff;
-      color:#08783d;
+    .secondary {
+      background: #ffffff;
+      color: #08783d;
+    }
+
+    .primary:hover,
+    .secondary:hover {
+      opacity: 0.9;
     }
 
     /* SECTIONS */
-    section{
-      padding:70px 20px;
+    section {
+      padding: 70px 20px;
     }
 
-    .container{
-      max-width:1100px;
-      margin:auto;
+    .container {
+      max-width: 1100px;
+      margin: auto;
     }
 
-    .title{
-      text-align:center;
-      margin-bottom:38px;
+    .title {
+      text-align: center;
+      margin-bottom: 38px;
     }
 
-    .title h2{
-      font-size:34px;
-      color:#08783d;
-      margin-bottom:8px;
+    .title h2 {
+      font-size: 34px;
+      color: #08783d;
+      margin-bottom: 8px;
     }
 
-    .title p{
-      color:#63736c;
+    .title p {
+      color: #63736c;
     }
 
-    /* SERVICES */
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:22px;
+    /* SERVICE CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .card{
-      background:#fff;
-      padding:28px;
-      border-radius:18px;
-      box-shadow:0 5px 22px rgba(0,0,0,.07);
-      text-align:center;
+    .card {
+      background: #ffffff;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 5px 22px rgba(0, 0, 0, 0.07);
+      text-align: center;
     }
 
-    .icon{
-      font-size:45px;
-      margin-bottom:12px;
+    .icon {
+      font-size: 45px;
+      margin-bottom: 12px;
     }
 
-    .card h3{
-      color:#166b43;
-      margin-bottom:8px;
-      font-size:21px;
+    .card h3 {
+      color: #166b43;
+      margin-bottom: 8px;
+      font-size: 21px;
     }
 
     /* ABOUT */
-    .about{
-      background:#edf7ef;
+    .about {
+      background: #edf7ef;
     }
 
-    .about-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:35px;
-      align-items:center;
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
     }
 
-    .about-box{
-      background:#fff;
-      padding:30px;
-      border-radius:20px;
-      box-shadow:0 5px 20px rgba(0,0,0,.06);
+    .about-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
     }
 
-    .about-box h3{
-      font-size:27px;
-      color:#08783d;
-      margin-bottom:12px;
+    .about-box h3 {
+      font-size: 27px;
+      color: #08783d;
+      margin-bottom: 12px;
     }
 
-    .checks{
-      list-style:none;
-      margin-top:15px;
+    .checks {
+      list-style: none;
+      margin-top: 15px;
     }
 
-    .checks li{
-      margin:10px 0;
-      font-weight:600;
+    .checks li {
+      margin: 10px 0;
+      font-weight: 600;
     }
 
-    .checks li:before{
-      content:"✓";
-      color:#08783d;
-      font-weight:bold;
-      margin-right:10px;
+    .checks li:before {
+      content: "✓";
+      color: #08783d;
+      font-weight: bold;
+      margin-right: 10px;
     }
 
     /* CONTACT */
-    .contact{
-      background:linear-gradient(135deg,#08783d,#075c32);
-      color:#fff;
+    .contact {
+      background: linear-gradient(135deg, #08783d, #075c32);
+      color: #ffffff;
     }
 
     .contact .title h2,
-    .contact .title p{
-      color:#fff;
+    .contact .title p {
+      color: #ffffff;
     }
 
-    .contact-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:25px;
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
     }
 
-    .contact-card{
-      background:rgba(255,255,255,.1);
-      padding:28px;
-      border-radius:18px;
+    .contact-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 28px;
+      border-radius: 18px;
     }
 
-    .contact-card h3{
-      margin-bottom:12px;
-      color:#ffe18a;
+    .contact-card h3 {
+      margin-bottom: 12px;
+      color: #ffe18a;
     }
 
-    .contact-card a{
-      color:#fff;
-      text-decoration:none;
+    .contact-card a {
+      color: #ffffff;
+      text-decoration: none;
     }
 
-    .contact-buttons{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:18px;
+    .contact-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
     }
 
-    .wa{
-      background:#25D366;
-      border-color:#25D366;
-      color:#fff;
-    }
-
-    /* FOOTER */
-    footer{
-      text-align:center;
-      padding:24px 15px;
-      background:#063b22;
-      color:#fff;
+    .wa {
+      background: #25D366;
+      border-color: #25D366;
+      color: #ffffff;
     }
 
     /* FLOATING BUTTONS */
-    .float{
-      position:fixed;
-      right:18px;
-      bottom:18px;
-      z-index:999;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
+    .float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .float a{
-      width:52px;
-      height:52px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      text-decoration:none;
-      font-size:23px;
-      box-shadow:0 4px 14px rgba(0,0,0,.25);
+    .float a {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 23px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     }
 
-    .float .call{
-      background:#08783d;
+    .float .call {
+      background: #08783d;
     }
 
-    .float .whatsapp{
-      background:#25D366;
+    .float .whatsapp {
+      background: #25D366;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 24px 15px;
+      background: #063b22;
+      color: #ffffff;
     }
 
     /* MOBILE */
-    @media(max-width:800px){
+    @media (max-width: 800px) {
 
-      .logo img{
-        width:180px;
-        height:55px;
+      .logo img {
+        width: 180px;
+        height: 55px;
       }
 
-      nav ul{
-        display:none;
+      nav {
+        padding: 8px 12px;
+      }
+
+      nav ul {
+        display: none;
       }
 
       .cards,
       .about-grid,
-      .contact-grid{
-        grid-template-columns:1fr;
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
 
-      .hero{
-        padding:60px 18px;
+      .hero {
+        padding: 60px 18px;
       }
 
-      section{
-        padding:55px 18px;
+      section {
+        padding: 55px 18px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
       }
     }
   </style>
@@ -340,15 +366,14 @@
 
 <!-- HEADER -->
 <header>
-
   <nav>
 
-    <!-- YOUR COMPANY LOGO -->
-    
-<!-- YOUR COMPANY LOGO -->
-<a class="logo" href="#home">
-    <img src="logo.jpeg" alt="Suryarath Solar Logo">
-</a>
+    <!-- COMPANY LOGO -->
+    <a class="logo" href="#home" aria-label="Suryarath Solar">
+      <img src="logo.jpeg" alt="Suryarath Solar Logo">
+    </a>
+
+    <!-- MENU -->
     <ul>
       <li><a href="#home">मुख्यपृष्ठ</a></li>
       <li><a href="#services">सेवा</a></li>
@@ -357,19 +382,18 @@
     </ul>
 
   </nav>
-
 </header>
 
 
 <!-- MAIN -->
 <main>
 
-  <!-- HERO -->
+  <!-- HOME -->
   <section class="hero" id="home">
 
     <h1>सूर्यरथ सोलार</h1>
 
-
+    <h2>तिमिरातून तेजाकडे</h2>
 
     <p>
       स्वच्छ, विश्वासार्ह आणि किफायतशीर सौर ऊर्जेच्या माध्यमातून
@@ -378,26 +402,24 @@
 
     <div class="buttons">
 
-      <a class="btn primary"
-         href="tel:8483841889">
-         📞 8483841889 वर कॉल
+      <a class="btn primary" href="tel:8483841889">
+        📞 8483841889 वर कॉल
       </a>
 
-      <a class="btn primary"
-         href="tel:7020081854">
-         📞 7020081854 वर कॉल
+      <a class="btn primary" href="tel:7020081854">
+        📞 7020081854 वर कॉल
       </a>
 
       <a class="btn secondary"
          href="https://wa.me/918483841889"
          target="_blank">
-         💬 WhatsApp 8483841889
+        💬 WhatsApp 8483841889
       </a>
 
       <a class="btn secondary"
          href="https://wa.me/917020081854"
          target="_blank">
-         💬 WhatsApp 7020081854
+        💬 WhatsApp 7020081854
       </a>
 
     </div>
@@ -411,57 +433,37 @@
     <div class="container">
 
       <div class="title">
-
         <h2>आमच्या सोलार सेवा</h2>
-
-        <p>
-          आपल्या गरजेनुसार सौर ऊर्जा समाधान
-        </p>
-
+        <p>आपल्या गरजेनुसार सौर ऊर्जा समाधान</p>
       </div>
-
 
       <div class="cards">
 
         <div class="card">
-
           <div class="icon">🏠</div>
-
           <h3>घरगुती सोलार</h3>
-
           <p>
-            घरासाठी सोलार पॅनेलची योग्य रचना व स्थापना
-            करून वीज खर्च कमी करण्यास मदत.
+            घरासाठी सोलार पॅनेलची योग्य रचना व स्थापना करून
+            वीज खर्च कमी करण्यास मदत.
           </p>
-
         </div>
 
-
         <div class="card">
-
           <div class="icon">🏢</div>
-
           <h3>कमर्शियल सोलार</h3>
-
           <p>
             दुकाने, कार्यालये आणि व्यावसायिक आस्थापनांसाठी
             कार्यक्षम सौर ऊर्जा प्रणाली.
           </p>
-
         </div>
 
-
         <div class="card">
-
           <div class="icon">🏭</div>
-
           <h3>इंडस्ट्रियल सोलार</h3>
-
           <p>
             उद्योगांच्या ऊर्जेच्या गरजेनुसार मोठ्या क्षमतेच्या
             सोलार सोल्युशन्स.
           </p>
-
         </div>
 
       </div>
@@ -483,17 +485,14 @@
 
           <h2>सूर्यरथ सोलार</h2>
 
-          <p>
-            तिमिरातून तेजाकडे ☀️
-          </p>
+          <p>तिमिरातून तेजाकडे ☀️</p>
 
         </div>
 
         <p>
           सौर ऊर्जा ही आजच्या काळातील शाश्वत आणि पर्यावरणपूरक ऊर्जा आहे.
-          सूर्यरथ सोलारच्या माध्यमातून आम्ही ग्राहकांना सोलार
-          प्रणालीबाबत योग्य मार्गदर्शन आणि व्यावसायिक सेवा देण्याचे
-          ध्येय ठेवतो.
+          सूर्यरथ सोलारच्या माध्यमातून आम्ही ग्राहकांना सोलार प्रणालीबाबत
+          योग्य मार्गदर्शन आणि व्यावसायिक सेवा देण्याचे ध्येय ठेवतो.
         </p>
 
       </div>
@@ -505,21 +504,13 @@
 
         <ul class="checks">
 
-          <li>
-            ऊर्जा बचतीसाठी सोलार समाधान
-          </li>
+          <li>ऊर्जा बचतीसाठी सोलार समाधान</li>
 
-          <li>
-            घरगुती व व्यावसायिक पर्याय
-          </li>
+          <li>घरगुती व व्यावसायिक पर्याय</li>
 
-          <li>
-            स्थापनेसाठी व्यावसायिक मार्गदर्शन
-          </li>
+          <li>स्थापनेसाठी व्यावसायिक मार्गदर्शन</li>
 
-          <li>
-            ग्राहकांच्या गरजेनुसार समाधान
-          </li>
+          <li>ग्राहकांच्या गरजेनुसार समाधान</li>
 
         </ul>
 
@@ -549,7 +540,6 @@
 
       <div class="contact-grid">
 
-
         <!-- PHONE -->
         <div class="contact-card">
 
@@ -572,12 +562,12 @@
 
             <a class="btn primary"
                href="tel:8483841889">
-               कॉल 8483841889
+              कॉल 8483841889
             </a>
 
             <a class="btn primary"
                href="tel:7020081854">
-               कॉल 7020081854
+              कॉल 7020081854
             </a>
 
           </div>
@@ -600,13 +590,13 @@
             <a class="btn wa"
                href="https://wa.me/918483841889"
                target="_blank">
-               WhatsApp 8483841889
+              WhatsApp 8483841889
             </a>
 
             <a class="btn wa"
                href="https://wa.me/917020081854"
                target="_blank">
-               WhatsApp 7020081854
+              WhatsApp 7020081854
             </a>
 
           </div>
@@ -637,20 +627,20 @@
 </main>
 
 
-<!-- FLOATING CALL & WHATSAPP -->
+<!-- FLOATING BUTTONS -->
 <div class="float">
 
   <a class="call"
      href="tel:8483841889"
      aria-label="Call Suryarath Solar">
-     📞
+    📞
   </a>
 
   <a class="whatsapp"
      href="https://wa.me/918483841889"
      target="_blank"
      aria-label="WhatsApp Suryarath Solar">
-     💬
+    💬
   </a>
 
 </div>
