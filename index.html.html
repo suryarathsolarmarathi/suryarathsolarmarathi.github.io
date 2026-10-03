@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Suryarath Solar | सूर्यरथ सोलार</title>
+
+  <meta name="description"
+        content="सूर्यरथ सोलार - तिमिरातून तेजाकडे. सौर ऊर्जा प्रणालीची स्थापना, घरगुती, व्यावसायिक आणि औद्योगिक सोलार सोल्युशन्स.">
+
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial,"Noto Sans Devanagari",sans-serif;
+      color:#183027;
+      background:#f8fbf8;
+      line-height:1.6;
+    }
+
+    header{
+      background:#fff;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 14px rgba(0,0,0,.08);
+    }
+
+    nav{
+      max-width:1150px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px 20px;
+    }
+
+    /* COMPANY LOGO */
+    .logo{
+      display:flex;
+      align-items:center;
+      text-decoration:none;
+      height:64px;
+    }
+
+    .logo img{
+      display:block;
+      width:205px;
+      height:58px;
+      object-fit:contain;
+      object-position:left center;
+    }
+
+    nav ul{
+      display:flex;
+      gap:24px;
+      list-style:none;
+    }
+
+    nav a{
+      color:#183027;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    nav a:hover{
+      color:#08783d;
+    }
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(135deg,#fff8d9,#e8f8e9);
+      padding:85px 20px;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:clamp(38px,7vw,72px);
+      color:#08783d;
+      margin-bottom:5px;
+    }
+
+    .hero h2{
+      font-size:clamp(22px,4vw,34px);
+      color:#d28a00;
+      margin-bottom:18px;
+    }
+
+    .hero p{
+      max-width:720px;
+      margin:0 auto 28px;
+      font-size:19px;
+      color:#40544b;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:13px 22px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:700;
+      border:2px solid #08783d;
+    }
+
+    .primary{
+      background:#08783d;
+      color:#fff;
+    }
+
+    .secondary{
+      background:#fff;
+      color:#08783d;
+    }
+
+    /* SECTIONS */
+    section{
+      padding:70px 20px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:38px;
+    }
+
+    .title h2{
+      font-size:34px;
+      color:#08783d;
+      margin-bottom:8px;
+    }
+
+    .title p{
+      color:#63736c;
+    }
+
+    /* SERVICES */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .card{
+      background:#fff;
+      padding:28px;
+      border-radius:18px;
+      box-shadow:0 5px 22px rgba(0,0,0,.07);
+      text-align:center;
+    }
+
+    .icon{
+      font-size:45px;
+      margin-bottom:12px;
+    }
+
+    .card h3{
+      color:#166b43;
+      margin-bottom:8px;
+      font-size:21px;
+    }
+
+    /* ABOUT */
+    .about{
+      background:#edf7ef;
+    }
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:35px;
+      align-items:center;
+    }
+
+    .about-box{
+      background:#fff;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,.06);
+    }
+
+    .about-box h3{
+      font-size:27px;
+      color:#08783d;
+      margin-bottom:12px;
+    }
+
+    .checks{
+      list-style:none;
+      margin-top:15px;
+    }
+
+    .checks li{
+      margin:10px 0;
+      font-weight:600;
+    }
+
+    .checks li:before{
+      content:"✓";
+      color:#08783d;
+      font-weight:bold;
+      margin-right:10px;
+    }
+
+    /* CONTACT */
+    .contact{
+      background:linear-gradient(135deg,#08783d,#075c32);
+      color:#fff;
+    }
+
+    .contact .title h2,
+    .contact .title p{
+      color:#fff;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
+    }
+
+    .contact-card{
+      background:rgba(255,255,255,.1);
+      padding:28px;
+      border-radius:18px;
+    }
+
+    .contact-card h3{
+      margin-bottom:12px;
+      color:#ffe18a;
+    }
+
+    .contact-card a{
+      color:#fff;
+      text-decoration:none;
+    }
+
+    .contact-buttons{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+
+    .wa{
+      background:#25D366;
+      border-color:#25D366;
+      color:#fff;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:24px 15px;
+      background:#063b22;
+      color:#fff;
+    }
+
+    /* FLOATING BUTTONS */
+    .float{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:999;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .float a{
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      text-decoration:none;
+      font-size:23px;
+      box-shadow:0 4px 14px rgba(0,0,0,.25);
+    }
+
+    .float .call{
+      background:#08783d;
+    }
+
+    .float .whatsapp{
+      background:#25D366;
+    }
+
+    /* MOBILE */
+    @media(max-width:800px){
+
+      .logo img{
+        width:180px;
+        height:55px;
+      }
+
+      nav ul{
+        display:none;
+      }
+
+      .cards,
+      .about-grid,
+      .contact-grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero{
+        padding:60px 18px;
+      }
+
+      section{
+        padding:55px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+  <nav>
+
+    <!-- YOUR COMPANY LOGO -->
+    <a class="logo" href="#home">
+   <img src="C:\Users\admin\Desktop\logo.jpeg" alt="Suryarath Solar Logo";width=100%;>
+</a>
+    <ul>
+      <li><a href="#home">मुख्यपृष्ठ</a></li>
+      <li><a href="#services">सेवा</a></li>
+      <li><a href="#about">आमच्याबद्दल</a></li>
+      <li><a href="#contact">संपर्क</a></li>
+    </ul>
+
+  </nav>
+
+</header>
+
+
+<!-- MAIN -->
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <h1>सूर्यरथ सोलार</h1>
+
+
+
+    <p>
+      स्वच्छ, विश्वासार्ह आणि किफायतशीर सौर ऊर्जेच्या माध्यमातून
+      आपल्या घराला आणि व्यवसायाला उज्ज्वल भविष्याकडे घेऊन चला.
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn primary"
+         href="tel:8483841889">
+         📞 8483841889 वर कॉल
+      </a>
+
+      <a class="btn primary"
+         href="tel:7020081854">
+         📞 7020081854 वर कॉल
+      </a>
+
+      <a class="btn secondary"
+         href="https://wa.me/918483841889"
+         target="_blank">
+         💬 WhatsApp 8483841889
+      </a>
+
+      <a class="btn secondary"
+         href="https://wa.me/917020081854"
+         target="_blank">
+         💬 WhatsApp 7020081854
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <div class="container">
+
+      <div class="title">
+
+        <h2>आमच्या सोलार सेवा</h2>
+
+        <p>
+          आपल्या गरजेनुसार सौर ऊर्जा समाधान
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="icon">🏠</div>
+
+          <h3>घरगुती सोलार</h3>
+
+          <p>
+            घरासाठी सोलार पॅनेलची योग्य रचना व स्थापना
+            करून वीज खर्च कमी करण्यास मदत.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🏢</div>
+
+          <h3>कमर्शियल सोलार</h3>
+
+          <p>
+            दुकाने, कार्यालये आणि व्यावसायिक आस्थापनांसाठी
+            कार्यक्षम सौर ऊर्जा प्रणाली.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🏭</div>
+
+          <h3>इंडस्ट्रियल सोलार</h3>
+
+          <p>
+            उद्योगांच्या ऊर्जेच्या गरजेनुसार मोठ्या क्षमतेच्या
+            सोलार सोल्युशन्स.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="container about-grid">
+
+      <div>
+
+        <div class="title"
+             style="text-align:left;margin-bottom:15px">
+
+          <h2>सूर्यरथ सोलार</h2>
+
+          <p>
+            तिमिरातून तेजाकडे ☀️
+          </p>
+
+        </div>
+
+        <p>
+          सौर ऊर्जा ही आजच्या काळातील शाश्वत आणि पर्यावरणपूरक ऊर्जा आहे.
+          सूर्यरथ सोलारच्या माध्यमातून आम्ही ग्राहकांना सोलार
+          प्रणालीबाबत योग्य मार्गदर्शन आणि व्यावसायिक सेवा देण्याचे
+          ध्येय ठेवतो.
+        </p>
+
+      </div>
+
+
+      <div class="about-box">
+
+        <h3>आम्हाला का निवडावे?</h3>
+
+        <ul class="checks">
+
+          <li>
+            ऊर्जा बचतीसाठी सोलार समाधान
+          </li>
+
+          <li>
+            घरगुती व व्यावसायिक पर्याय
+          </li>
+
+          <li>
+            स्थापनेसाठी व्यावसायिक मार्गदर्शन
+          </li>
+
+          <li>
+            ग्राहकांच्या गरजेनुसार समाधान
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="title">
+
+        <h2>आजच संपर्क करा</h2>
+
+        <p>
+          सोलारसाठी माहिती किंवा चौकशी करण्यासाठी
+          आम्हाला कॉल किंवा WhatsApp करा.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <!-- PHONE -->
+        <div class="contact-card">
+
+          <h3>📞 संपर्क क्रमांक</h3>
+
+          <p>
+            <a href="tel:8483841889">
+              8483841889
+            </a>
+          </p>
+
+          <p>
+            <a href="tel:7020081854">
+              7020081854
+            </a>
+          </p>
+
+
+          <div class="contact-buttons">
+
+            <a class="btn primary"
+               href="tel:8483841889">
+               कॉल 8483841889
+            </a>
+
+            <a class="btn primary"
+               href="tel:7020081854">
+               कॉल 7020081854
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- WHATSAPP -->
+        <div class="contact-card">
+
+          <h3>💬 WhatsApp</h3>
+
+          <p>
+            दोन्ही क्रमांकांवर WhatsApp उपलब्ध.
+          </p>
+
+
+          <div class="contact-buttons">
+
+            <a class="btn wa"
+               href="https://wa.me/918483841889"
+               target="_blank">
+               WhatsApp 8483841889
+            </a>
+
+            <a class="btn wa"
+               href="https://wa.me/917020081854"
+               target="_blank">
+               WhatsApp 7020081854
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ADDRESS -->
+      <div class="contact-card"
+           style="margin-top:25px;text-align:center">
+
+        <h3>📍 आमचा पत्ता</h3>
+
+        <p>
+          Nagarparishad Road, Chakan,<br>
+          In front of Mungase Hospital,
+          Kanda Market, Chakan
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- FLOATING CALL & WHATSAPP -->
+<div class="float">
+
+  <a class="call"
+     href="tel:8483841889"
+     aria-label="Call Suryarath Solar">
+     📞
+  </a>
+
+  <a class="whatsapp"
+     href="https://wa.me/918483841889"
+     target="_blank"
+     aria-label="WhatsApp Suryarath Solar">
+     💬
+  </a>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <p>
+    © 2026 Suryarath Solar | सूर्यरथ सोलार
+  </p>
+
+  <p>
+    तिमिरातून तेजाकडे
+  </p>
+
+</footer>
+
+</body>
+</html>
